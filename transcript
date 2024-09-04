@@ -1,0 +1,1399 @@
+# //  Questa Sim-64
+# //  Version 10.7c win64 Aug 18 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# vsim tb_top 
+# Start time: 22:32:35 on Sep 04,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.data_if_sv_unit(fast)
+# Loading work.seq_item_pkg(fast)
+# Loading work.sequence1_pkg(fast)
+# Loading work.data_if(fast)
+# Loading work.config_pkg(fast)
+# Loading work.coverage_pkg(fast)
+# Loading work.scoreboard_pkg(fast)
+# Loading work.monitor_pkg(fast)
+# Loading work.driver_pkg(fast)
+# Loading work.agent_pkg(fast)
+# Loading work.env_pkg(fast)
+# Loading work.mem_test_pkg(fast)
+# Loading work.test1_pkg(fast)
+# Loading work.testbench_top_sv_unit(fast)
+# Loading work.tb_top(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading D:/Programs/QuestaSim/questasim64_10.7c/uvm-1.1d\win64\uvm_dpi.dll
+run -all
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(216) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test ...
+# UVM_INFO mem_test.sv(22) @ 0: my_test [my_test] build phase
+# UVM_INFO mem_test.sv(28) @ 0: my_test [my_test] build phase mid
+# UVM_INFO mem_test.sv(30) @ 0: my_test [my_test] build phase finished
+# UVM_INFO test1.sv(23) @ 0: my_test [my_test] build phase
+# --------------------------------------------------------------
+# Name                       Type                    Size  Value
+# --------------------------------------------------------------
+# my_test                    test1                   -     @471 
+#   env                      env                     -     @478 
+#     agent                  agent                   -     @492 
+#       driver               driver                  -     @634 
+#         rsp_port           uvm_analysis_port       -     @649 
+#         seq_item_port      uvm_seq_item_pull_port  -     @641 
+#       monitor              monitor                 -     @657 
+#         sender             uvm_analysis_port       -     @678 
+#       sequencer            uvm_sequencer           -     @525 
+#         rsp_export         uvm_analysis_export     -     @532 
+#         seq_item_export    uvm_seq_item_pull_imp   -     @626 
+#         arbitration_queue  array                   0     -    
+#         lock_queue         array                   0     -    
+#         num_last_reqs      integral                32    'd1  
+#         num_last_rsps      integral                32    'd1  
+#     coverage               coverage                -     @506 
+#       analysis_imp         uvm_analysis_imp        -     @513 
+#     scoreboard             scoreboard              -     @499 
+#       receiver             uvm_analysis_imp        -     @695 
+# --------------------------------------------------------------
+# UVM_INFO monitor.sv(35) @ 10: my_test.env.agent.monitor [monitor] following item is sampled from DUT
+# UVM_INFO monitor.sv(36) @ 10: my_test.env.agent.monitor [monitor] the if data_out is 0000
+# ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# item        seq_item  -     @674 
+#   rstn      integral  1     'h0  
+#   re        integral  1     'h0  
+#   we        integral  1     'h0  
+#   adress    integral  3     'h0  
+#   data_in   integral  16    'h0  
+#   data_out  integral  16    'h0  
+# ---------------------------------
+# UVM_INFO scoreboard.sv(34) @ 10: my_test.env.scoreboard [scoreboard] following item is subscibed to scoreboard
+# ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# item        seq_item  -     @674 
+#   rstn      integral  1     'h0  
+#   re        integral  1     'h0  
+#   we        integral  1     'h0  
+#   adress    integral  3     'h0  
+#   data_in   integral  16    'h0  
+#   data_out  integral  16    'h0  
+# ---------------------------------
+# UVM_INFO monitor.sv(35) @ 30: my_test.env.agent.monitor [monitor] following item is sampled from DUT
+# UVM_INFO monitor.sv(36) @ 30: my_test.env.agent.monitor [monitor] the if data_out is 0000
+# ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# item        seq_item  -     @674 
+#   rstn      integral  1     'h0  
+#   re        integral  1     'h0  
+#   we        integral  1     'h0  
+#   adress    integral  3     'h0  
+#   data_in   integral  16    'h0  
+#   data_out  integral  16    'h0  
+# ---------------------------------
+# UVM_INFO scoreboard.sv(34) @ 30: my_test.env.scoreboard [scoreboard] following item is subscibed to scoreboard
+# ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# item        seq_item  -     @674 
+#   rstn      integral  1     'h0  
+#   re        integral  1     'h0  
+#   we        integral  1     'h0  
+#   adress    integral  3     'h0  
+#   data_in   integral  16    'h0  
+#   data_out  integral  16    'h0  
+# ---------------------------------
+# UVM_INFO sequence1.sv(25) @ 30: my_test.env.agent.sequencer@@seq1 [seq1] write operation test..
+# -------------------------------------------------------------------------------
+# Name                           Type      Size  Value                           
+# -------------------------------------------------------------------------------
+# sequence1                      seq_item  -     @730                            
+#   rstn                         integral  1     'h1                             
+#   re                           integral  1     'h0                             
+#   we                           integral  1     'h1                             
+#   adress                       integral  3     'h7                             
+#   data_in                      integral  16    'h3134                          
+#   data_out                     integral  16    'h0                             
+#   begin_time                   time      64    30                              
+#   depth                        int       32    'd2                             
+#   parent sequence (name)       string    4     seq1                            
+#   parent sequence (full name)  string    32    my_test.env.agent.sequencer.seq1
+#   sequencer                    string    27    my_test.env.agent.sequencer     
+# -------------------------------------------------------------------------------
+# UVM_INFO driver.sv(31) @ 50: my_test.env.agent.driver [driver] following item is drived to DUT
+# -------------------------------------------------------------------------------
+# Name                           Type      Size  Value                           
+# -------------------------------------------------------------------------------
+# sequence1                      seq_item  -     @730                            
+#   rstn                         integral  1     'h1                             
+#   re                           integral  1     'h0                             
+#   we                           integral  1     'h1                             
+#   adress                       integral  3     'h7                             
+#   data_in                      integral  16    'h3134                          
+#   data_out                     integral  16    'h0                             
+#   begin_time                   time      64    30                              
+#   depth                        int       32    'd2                             
+#   parent sequence (name)       string    4     seq1                            
+#   parent sequence (full name)  string    32    my_test.env.agent.sequencer.seq1
+#   sequencer                    string    27    my_test.env.agent.sequencer     
+# -------------------------------------------------------------------------------
+# UVM_INFO monitor.sv(35) @ 50: my_test.env.agent.monitor [monitor] following item is sampled from DUT
+# UVM_INFO monitor.sv(36) @ 50: my_test.env.agent.monitor [monitor] the if data_out is 0000
+# ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# item        seq_item  -     @674 
+#   rstn      integral  1     'h0  
+#   re        integral  1     'h0  
+#   we        integral  1     'h0  
+#   adress    integral  3     'h0  
+#   data_in   integral  16    'h0  
+#   data_out  integral  16    'h0  
+# ---------------------------------
+# UVM_INFO scoreboard.sv(34) @ 50: my_test.env.scoreboard [scoreboard] following item is subscibed to scoreboard
+# ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# item        seq_item  -     @674 
+#   rstn      integral  1     'h0  
+#   re        integral  1     'h0  
+#   we        integral  1     'h0  
+#   adress    integral  3     'h0  
+#   data_in   integral  16    'h0  
+#   data_out  integral  16    'h0  
+# ---------------------------------
+# UVM_INFO sequence1.sv(25) @ 50: my_test.env.agent.sequencer@@seq1 [seq1] write operation test..
+# -------------------------------------------------------------------------------
+# Name                           Type      Size  Value                           
+# -------------------------------------------------------------------------------
+# sequence1                      seq_item  -     @730                            
+#   rstn                         integral  1     'h1                             
+#   re                           integral  1     'h0                             
+#   we                           integral  1     'h1                             
+#   adress                       integral  3     'h1                             
+#   data_in                      integral  16    'hc96d                          
+#   data_out                     integral  16    'h0                             
+#   begin_time                   time      64    50                              
+#   end_time                     time      64    50                              
+#   depth                        int       32    'd2                             
+#   parent sequence (name)       string    4     seq1                            
+#   parent sequence (full name)  string    32    my_test.env.agent.sequencer.seq1
+#   sequencer                    string    27    my_test.env.agent.sequencer     
+# -------------------------------------------------------------------------------
+# UVM_INFO driver.sv(31) @ 70: my_test.env.agent.driver [driver] following item is drived to DUT
+# -------------------------------------------------------------------------------
+# Name                           Type      Size  Value                           
+# -------------------------------------------------------------------------------
+# sequence1                      seq_item  -     @730                            
+#   rstn                         integral  1     'h1                             
+#   re                           integral  1     'h0                             
+#   we                           integral  1     'h1                             
+#   adress                       integral  3     'h1                             
+#   data_in                      integral  16    'hc96d                          
+#   data_out                     integral  16    'h0                             
+#   begin_time                   time      64    50                              
+#   end_time                     time      64    50                              
+#   depth                        int       32    'd2                             
+#   parent sequence (name)       string    4     seq1                            
+#   parent sequence (full name)  string    32    my_test.env.agent.sequencer.seq1
+#   sequencer                    string    27    my_test.env.agent.sequencer     
+# -------------------------------------------------------------------------------
+# UVM_INFO monitor.sv(35) @ 70: my_test.env.agent.monitor [monitor] following item is sampled from DUT
+# UVM_INFO monitor.sv(36) @ 70: my_test.env.agent.monitor [monitor] the if data_out is 0000
+# ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# item        seq_item  -     @674 
+#   rstn      integral  1     'h1  
+#   re        integral  1     'h0  
+#   we        integral  1     'h0  
+#   adress    integral  3     'h0  
+#   data_in   integral  16    'h0  
+#   data_out  integral  16    'h0  
+# ---------------------------------
+# UVM_INFO scoreboard.sv(34) @ 70: my_test.env.scoreboard [scoreboard] following item is subscibed to scoreboard
+# ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# item        seq_item  -     @674 
+#   rstn      integral  1     'h1  
+#   re        integral  1     'h0  
+#   we        integral  1     'h0  
+#   adress    integral  3     'h0  
+#   data_in   integral  16    'h0  
+#   data_out  integral  16    'h0  
+# ---------------------------------
+# UVM_INFO sequence1.sv(25) @ 70: my_test.env.agent.sequencer@@seq1 [seq1] write operation test..
+# -------------------------------------------------------------------------------
+# Name                           Type      Size  Value                           
+# -------------------------------------------------------------------------------
+# sequence1                      seq_item  -     @730                            
+#   rstn                         integral  1     'h1                             
+#   re                           integral  1     'h0                             
+#   we                           integral  1     'h1                             
+#   adress                       integral  3     'h4                             
+#   data_in                      integral  16    'h6d9e                          
+#   data_out                     integral  16    'h0                             
+#   begin_time                   time      64    70                              
+#   end_time                     time      64    70                              
+#   depth                        int       32    'd2                             
+#   parent sequence (name)       string    4     seq1                            
+#   parent sequence (full name)  string    32    my_test.env.agent.sequencer.seq1
+#   sequencer                    string    27    my_test.env.agent.sequencer     
+# -------------------------------------------------------------------------------
+# UVM_INFO driver.sv(31) @ 90: my_test.env.agent.driver [driver] following item is drived to DUT
+# -------------------------------------------------------------------------------
+# Name                           Type      Size  Value                           
+# -------------------------------------------------------------------------------
+# sequence1                      seq_item  -     @730                            
+#   rstn                         integral  1     'h1                             
+#   re                           integral  1     'h0                             
+#   we                           integral  1     'h1                             
+#   adress                       integral  3     'h4                             
+#   data_in                      integral  16    'h6d9e                          
+#   data_out                     integral  16    'h0                             
+#   begin_time                   time      64    70                              
+#   end_time                     time      64    70                              
+#   depth                        int       32    'd2                             
+#   parent sequence (name)       string    4     seq1                            
+#   parent sequence (full name)  string    32    my_test.env.agent.sequencer.seq1
+#   sequencer                    string    27    my_test.env.agent.sequencer     
+# -------------------------------------------------------------------------------
+# UVM_INFO monitor.sv(35) @ 90: my_test.env.agent.monitor [monitor] following item is sampled from DUT
+# UVM_INFO monitor.sv(36) @ 90: my_test.env.agent.monitor [monitor] the if data_out is 0000
+# ----------------------------------
+# Name        Type      Size  Value 
+# ----------------------------------
+# item        seq_item  -     @674  
+#   rstn      integral  1     'h1   
+#   re        integral  1     'h0   
+#   we        integral  1     'h1   
+#   adress    integral  3     'h7   
+#   data_in   integral  16    'h3134
+#   data_out  integral  16    'h0   
+# ----------------------------------
+# UVM_INFO scoreboard.sv(34) @ 90: my_test.env.scoreboard [scoreboard] following item is subscibed to scoreboard
+# ----------------------------------
+# Name        Type      Size  Value 
+# ----------------------------------
+# item        seq_item  -     @674  
+#   rstn      integral  1     'h1   
+#   re        integral  1     'h0   
+#   we        integral  1     'h1   
+#   adress    integral  3     'h7   
+#   data_in   integral  16    'h3134
+#   data_out  integral  16    'h0   
+# ----------------------------------
+# UVM_INFO scoreboard.sv(48) @ 90: my_test.env.scoreboard [scoreboard]  read operation is capetured.
+# UVM_INFO sequence1.sv(25) @ 90: my_test.env.agent.sequencer@@seq1 [seq1] write operation test..
+# -------------------------------------------------------------------------------
+# Name                           Type      Size  Value                           
+# -------------------------------------------------------------------------------
+# sequence1                      seq_item  -     @730                            
+#   rstn                         integral  1     'h1                             
+#   re                           integral  1     'h0                             
+#   we                           integral  1     'h1                             
+#   adress                       integral  3     'h0                             
+#   data_in                      integral  16    'hd07c                          
+#   data_out                     integral  16    'h0                             
+#   begin_time                   time      64    90                              
+#   end_time                     time      64    90                              
+#   depth                        int       32    'd2                             
+#   parent sequence (name)       string    4     seq1                            
+#   parent sequence (full name)  string    32    my_test.env.agent.sequencer.seq1
+#   sequencer                    string    27    my_test.env.agent.sequencer     
+# -------------------------------------------------------------------------------
+# UVM_INFO driver.sv(31) @ 110: my_test.env.agent.driver [driver] following item is drived to DUT
+# -------------------------------------------------------------------------------
+# Name                           Type      Size  Value                           
+# -------------------------------------------------------------------------------
+# sequence1                      seq_item  -     @730                            
+#   rstn                         integral  1     'h1                             
+#   re                           integral  1     'h0                             
+#   we                           integral  1     'h1                             
+#   adress                       integral  3     'h0                             
+#   data_in                      integral  16    'hd07c                          
+#   data_out                     integral  16    'h0                             
+#   begin_time                   time      64    90                              
+#   end_time                     time      64    90                              
+#   depth                        int       32    'd2                             
+#   parent sequence (name)       string    4     seq1                            
+#   parent sequence (full name)  string    32    my_test.env.agent.sequencer.seq1
+#   sequencer                    string    27    my_test.env.agent.sequencer     
+# -------------------------------------------------------------------------------
+# UVM_INFO monitor.sv(35) @ 110: my_test.env.agent.monitor [monitor] following item is sampled from DUT
+# UVM_INFO monitor.sv(36) @ 110: my_test.env.agent.monitor [monitor] the if data_out is 0000
+# ----------------------------------
+# Name        Type      Size  Value 
+# ----------------------------------
+# item        seq_item  -     @674  
+#   rstn      integral  1     'h1   
+#   re        integral  1     'h0   
+#   we        integral  1     'h1   
+#   adress    integral  3     'h1   
+#   data_in   integral  16    'hc96d
+#   data_out  integral  16    'h0   
+# ----------------------------------
+# UVM_INFO scoreboard.sv(34) @ 110: my_test.env.scoreboard [scoreboard] following item is subscibed to scoreboard
+# ----------------------------------
+# Name        Type      Size  Value 
+# ----------------------------------
+# item        seq_item  -     @674  
+#   rstn      integral  1     'h1   
+#   re        integral  1     'h0   
+#   we        integral  1     'h1   
+#   adress    integral  3     'h1   
+#   data_in   integral  16    'hc96d
+#   data_out  integral  16    'h0   
+# ----------------------------------
+# UVM_INFO scoreboard.sv(48) @ 110: my_test.env.scoreboard [scoreboard]  read operation is capetured.
+# UVM_INFO sequence1.sv(25) @ 110: my_test.env.agent.sequencer@@seq1 [seq1] write operation test..
+# -------------------------------------------------------------------------------
+# Name                           Type      Size  Value                           
+# -------------------------------------------------------------------------------
+# sequence1                      seq_item  -     @730                            
+#   rstn                         integral  1     'h1                             
+#   re                           integral  1     'h0                             
+#   we                           integral  1     'h1                             
+#   adress                       integral  3     'h6                             
+#   data_in                      integral  16    'had4e                          
+#   data_out                     integral  16    'h0                             
+#   begin_time                   time      64    110                             
+#   end_time                     time      64    110                             
+#   depth                        int       32    'd2                             
+#   parent sequence (name)       string    4     seq1                            
+#   parent sequence (full name)  string    32    my_test.env.agent.sequencer.seq1
+#   sequencer                    string    27    my_test.env.agent.sequencer     
+# -------------------------------------------------------------------------------
+# UVM_INFO driver.sv(31) @ 130: my_test.env.agent.driver [driver] following item is drived to DUT
+# -------------------------------------------------------------------------------
+# Name                           Type      Size  Value                           
+# -------------------------------------------------------------------------------
+# sequence1                      seq_item  -     @730                            
+#   rstn                         integral  1     'h1                             
+#   re                           integral  1     'h0                             
+#   we                           integral  1     'h1                             
+#   adress                       integral  3     'h6                             
+#   data_in                      integral  16    'had4e                          
+#   data_out                     integral  16    'h0                             
+#   begin_time                   time      64    110                             
+#   end_time                     time      64    110                             
+#   depth                        int       32    'd2                             
+#   parent sequence (name)       string    4     seq1                            
+#   parent sequence (full name)  string    32    my_test.env.agent.sequencer.seq1
+#   sequencer                    string    27    my_test.env.agent.sequencer     
+# -------------------------------------------------------------------------------
+# UVM_INFO monitor.sv(35) @ 130: my_test.env.agent.monitor [monitor] following item is sampled from DUT
+# UVM_INFO monitor.sv(36) @ 130: my_test.env.agent.monitor [monitor] the if data_out is 0000
+# ----------------------------------
+# Name        Type      Size  Value 
+# ----------------------------------
+# item        seq_item  -     @674  
+#   rstn      integral  1     'h1   
+#   re        integral  1     'h0   
+#   we        integral  1     'h1   
+#   adress    integral  3     'h4   
+#   data_in   integral  16    'h6d9e
+#   data_out  integral  16    'h0   
+# ----------------------------------
+# UVM_INFO scoreboard.sv(34) @ 130: my_test.env.scoreboard [scoreboard] following item is subscibed to scoreboard
+# ----------------------------------
+# Name        Type      Size  Value 
+# ----------------------------------
+# item        seq_item  -     @674  
+#   rstn      integral  1     'h1   
+#   re        integral  1     'h0   
+#   we        integral  1     'h1   
+#   adress    integral  3     'h4   
+#   data_in   integral  16    'h6d9e
+#   data_out  integral  16    'h0   
+# ----------------------------------
+# UVM_INFO scoreboard.sv(48) @ 130: my_test.env.scoreboard [scoreboard]  read operation is capetured.
+# UVM_INFO sequence1.sv(25) @ 130: my_test.env.agent.sequencer@@seq1 [seq1] write operation test..
+# -------------------------------------------------------------------------------
+# Name                           Type      Size  Value                           
+# -------------------------------------------------------------------------------
+# sequence1                      seq_item  -     @730                            
+#   rstn                         integral  1     'h1                             
+#   re                           integral  1     'h0                             
+#   we                           integral  1     'h1                             
+#   adress                       integral  3     'h2                             
+#   data_in                      integral  16    'ha0e                           
+#   data_out                     integral  16    'h0                             
+#   begin_time                   time      64    130                             
+#   end_time                     time      64    130                             
+#   depth                        int       32    'd2                             
+#   parent sequence (name)       string    4     seq1                            
+#   parent sequence (full name)  string    32    my_test.env.agent.sequencer.seq1
+#   sequencer                    string    27    my_test.env.agent.sequencer     
+# -------------------------------------------------------------------------------
+# UVM_INFO driver.sv(31) @ 150: my_test.env.agent.driver [driver] following item is drived to DUT
+# -------------------------------------------------------------------------------
+# Name                           Type      Size  Value                           
+# -------------------------------------------------------------------------------
+# sequence1                      seq_item  -     @730                            
+#   rstn                         integral  1     'h1                             
+#   re                           integral  1     'h0                             
+#   we                           integral  1     'h1                             
+#   adress                       integral  3     'h2                             
+#   data_in                      integral  16    'ha0e                           
+#   data_out                     integral  16    'h0                             
+#   begin_time                   time      64    130                             
+#   end_time                     time      64    130                             
+#   depth                        int       32    'd2                             
+#   parent sequence (name)       string    4     seq1                            
+#   parent sequence (full name)  string    32    my_test.env.agent.sequencer.seq1
+#   sequencer                    string    27    my_test.env.agent.sequencer     
+# -------------------------------------------------------------------------------
+# UVM_INFO monitor.sv(35) @ 150: my_test.env.agent.monitor [monitor] following item is sampled from DUT
+# UVM_INFO monitor.sv(36) @ 150: my_test.env.agent.monitor [monitor] the if data_out is 0000
+# ----------------------------------
+# Name        Type      Size  Value 
+# ----------------------------------
+# item        seq_item  -     @674  
+#   rstn      integral  1     'h1   
+#   re        integral  1     'h0   
+#   we        integral  1     'h1   
+#   adress    integral  3     'h0   
+#   data_in   integral  16    'hd07c
+#   data_out  integral  16    'h0   
+# ----------------------------------
+# UVM_INFO scoreboard.sv(34) @ 150: my_test.env.scoreboard [scoreboard] following item is subscibed to scoreboard
+# ----------------------------------
+# Name        Type      Size  Value 
+# ----------------------------------
+# item        seq_item  -     @674  
+#   rstn      integral  1     'h1   
+#   re        integral  1     'h0   
+#   we        integral  1     'h1   
+#   adress    integral  3     'h0   
+#   data_in   integral  16    'hd07c
+#   data_out  integral  16    'h0   
+# ----------------------------------
+# UVM_INFO scoreboard.sv(48) @ 150: my_test.env.scoreboard [scoreboard]  read operation is capetured.
+# UVM_INFO sequence1.sv(25) @ 150: my_test.env.agent.sequencer@@seq1 [seq1] write operation test..
+# -------------------------------------------------------------------------------
+# Name                           Type      Size  Value                           
+# -------------------------------------------------------------------------------
+# sequence1                      seq_item  -     @730                            
+#   rstn                         integral  1     'h1                             
+#   re                           integral  1     'h0                             
+#   we                           integral  1     'h1                             
+#   adress                       integral  3     'h6                             
+#   data_in                      integral  16    'hcecc                          
+#   data_out                     integral  16    'h0                             
+#   begin_time                   time      64    150                             
+#   end_time                     time      64    150                             
+#   depth                        int       32    'd2                             
+#   parent sequence (name)       string    4     seq1                            
+#   parent sequence (full name)  string    32    my_test.env.agent.sequencer.seq1
+#   sequencer                    string    27    my_test.env.agent.sequencer     
+# -------------------------------------------------------------------------------
+# UVM_INFO driver.sv(31) @ 170: my_test.env.agent.driver [driver] following item is drived to DUT
+# -------------------------------------------------------------------------------
+# Name                           Type      Size  Value                           
+# -------------------------------------------------------------------------------
+# sequence1                      seq_item  -     @730                            
+#   rstn                         integral  1     'h1                             
+#   re                           integral  1     'h0                             
+#   we                           integral  1     'h1                             
+#   adress                       integral  3     'h6                             
+#   data_in                      integral  16    'hcecc                          
+#   data_out                     integral  16    'h0                             
+#   begin_time                   time      64    150                             
+#   end_time                     time      64    150                             
+#   depth                        int       32    'd2                             
+#   parent sequence (name)       string    4     seq1                            
+#   parent sequence (full name)  string    32    my_test.env.agent.sequencer.seq1
+#   sequencer                    string    27    my_test.env.agent.sequencer     
+# -------------------------------------------------------------------------------
+# UVM_INFO monitor.sv(35) @ 170: my_test.env.agent.monitor [monitor] following item is sampled from DUT
+# UVM_INFO monitor.sv(36) @ 170: my_test.env.agent.monitor [monitor] the if data_out is 0000
+# ----------------------------------
+# Name        Type      Size  Value 
+# ----------------------------------
+# item        seq_item  -     @674  
+#   rstn      integral  1     'h1   
+#   re        integral  1     'h0   
+#   we        integral  1     'h1   
+#   adress    integral  3     'h6   
+#   data_in   integral  16    'had4e
+#   data_out  integral  16    'h0   
+# ----------------------------------
+# UVM_INFO scoreboard.sv(34) @ 170: my_test.env.scoreboard [scoreboard] following item is subscibed to scoreboard
+# ----------------------------------
+# Name        Type      Size  Value 
+# ----------------------------------
+# item        seq_item  -     @674  
+#   rstn      integral  1     'h1   
+#   re        integral  1     'h0   
+#   we        integral  1     'h1   
+#   adress    integral  3     'h6   
+#   data_in   integral  16    'had4e
+#   data_out  integral  16    'h0   
+# ----------------------------------
+# UVM_INFO scoreboard.sv(48) @ 170: my_test.env.scoreboard [scoreboard]  read operation is capetured.
+# UVM_INFO sequence1.sv(25) @ 170: my_test.env.agent.sequencer@@seq1 [seq1] write operation test..
+# -------------------------------------------------------------------------------
+# Name                           Type      Size  Value                           
+# -------------------------------------------------------------------------------
+# sequence1                      seq_item  -     @730                            
+#   rstn                         integral  1     'h1                             
+#   re                           integral  1     'h0                             
+#   we                           integral  1     'h1                             
+#   adress                       integral  3     'h3                             
+#   data_in                      integral  16    'h4551                          
+#   data_out                     integral  16    'h0                             
+#   begin_time                   time      64    170                             
+#   end_time                     time      64    170                             
+#   depth                        int       32    'd2                             
+#   parent sequence (name)       string    4     seq1                            
+#   parent sequence (full name)  string    32    my_test.env.agent.sequencer.seq1
+#   sequencer                    string    27    my_test.env.agent.sequencer     
+# -------------------------------------------------------------------------------
+# UVM_INFO driver.sv(31) @ 190: my_test.env.agent.driver [driver] following item is drived to DUT
+# -------------------------------------------------------------------------------
+# Name                           Type      Size  Value                           
+# -------------------------------------------------------------------------------
+# sequence1                      seq_item  -     @730                            
+#   rstn                         integral  1     'h1                             
+#   re                           integral  1     'h0                             
+#   we                           integral  1     'h1                             
+#   adress                       integral  3     'h3                             
+#   data_in                      integral  16    'h4551                          
+#   data_out                     integral  16    'h0                             
+#   begin_time                   time      64    170                             
+#   end_time                     time      64    170                             
+#   depth                        int       32    'd2                             
+#   parent sequence (name)       string    4     seq1                            
+#   parent sequence (full name)  string    32    my_test.env.agent.sequencer.seq1
+#   sequencer                    string    27    my_test.env.agent.sequencer     
+# -------------------------------------------------------------------------------
+# UVM_INFO monitor.sv(35) @ 190: my_test.env.agent.monitor [monitor] following item is sampled from DUT
+# UVM_INFO monitor.sv(36) @ 190: my_test.env.agent.monitor [monitor] the if data_out is 0000
+# ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# item        seq_item  -     @674 
+#   rstn      integral  1     'h1  
+#   re        integral  1     'h0  
+#   we        integral  1     'h1  
+#   adress    integral  3     'h2  
+#   data_in   integral  16    'ha0e
+#   data_out  integral  16    'h0  
+# ---------------------------------
+# UVM_INFO scoreboard.sv(34) @ 190: my_test.env.scoreboard [scoreboard] following item is subscibed to scoreboard
+# ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# item        seq_item  -     @674 
+#   rstn      integral  1     'h1  
+#   re        integral  1     'h0  
+#   we        integral  1     'h1  
+#   adress    integral  3     'h2  
+#   data_in   integral  16    'ha0e
+#   data_out  integral  16    'h0  
+# ---------------------------------
+# UVM_INFO scoreboard.sv(48) @ 190: my_test.env.scoreboard [scoreboard]  read operation is capetured.
+# UVM_INFO sequence1.sv(25) @ 190: my_test.env.agent.sequencer@@seq1 [seq1] write operation test..
+# -------------------------------------------------------------------------------
+# Name                           Type      Size  Value                           
+# -------------------------------------------------------------------------------
+# sequence1                      seq_item  -     @730                            
+#   rstn                         integral  1     'h1                             
+#   re                           integral  1     'h0                             
+#   we                           integral  1     'h1                             
+#   adress                       integral  3     'h3                             
+#   data_in                      integral  16    'h513c                          
+#   data_out                     integral  16    'h0                             
+#   begin_time                   time      64    190                             
+#   end_time                     time      64    190                             
+#   depth                        int       32    'd2                             
+#   parent sequence (name)       string    4     seq1                            
+#   parent sequence (full name)  string    32    my_test.env.agent.sequencer.seq1
+#   sequencer                    string    27    my_test.env.agent.sequencer     
+# -------------------------------------------------------------------------------
+# UVM_INFO driver.sv(31) @ 210: my_test.env.agent.driver [driver] following item is drived to DUT
+# -------------------------------------------------------------------------------
+# Name                           Type      Size  Value                           
+# -------------------------------------------------------------------------------
+# sequence1                      seq_item  -     @730                            
+#   rstn                         integral  1     'h1                             
+#   re                           integral  1     'h0                             
+#   we                           integral  1     'h1                             
+#   adress                       integral  3     'h3                             
+#   data_in                      integral  16    'h513c                          
+#   data_out                     integral  16    'h0                             
+#   begin_time                   time      64    190                             
+#   end_time                     time      64    190                             
+#   depth                        int       32    'd2                             
+#   parent sequence (name)       string    4     seq1                            
+#   parent sequence (full name)  string    32    my_test.env.agent.sequencer.seq1
+#   sequencer                    string    27    my_test.env.agent.sequencer     
+# -------------------------------------------------------------------------------
+# UVM_INFO monitor.sv(35) @ 210: my_test.env.agent.monitor [monitor] following item is sampled from DUT
+# UVM_INFO monitor.sv(36) @ 210: my_test.env.agent.monitor [monitor] the if data_out is 0000
+# ----------------------------------
+# Name        Type      Size  Value 
+# ----------------------------------
+# item        seq_item  -     @674  
+#   rstn      integral  1     'h1   
+#   re        integral  1     'h0   
+#   we        integral  1     'h1   
+#   adress    integral  3     'h6   
+#   data_in   integral  16    'hcecc
+#   data_out  integral  16    'h0   
+# ----------------------------------
+# UVM_INFO scoreboard.sv(34) @ 210: my_test.env.scoreboard [scoreboard] following item is subscibed to scoreboard
+# ----------------------------------
+# Name        Type      Size  Value 
+# ----------------------------------
+# item        seq_item  -     @674  
+#   rstn      integral  1     'h1   
+#   re        integral  1     'h0   
+#   we        integral  1     'h1   
+#   adress    integral  3     'h6   
+#   data_in   integral  16    'hcecc
+#   data_out  integral  16    'h0   
+# ----------------------------------
+# UVM_INFO scoreboard.sv(48) @ 210: my_test.env.scoreboard [scoreboard]  read operation is capetured.
+# UVM_INFO sequence1.sv(25) @ 210: my_test.env.agent.sequencer@@seq1 [seq1] write operation test..
+# -------------------------------------------------------------------------------
+# Name                           Type      Size  Value                           
+# -------------------------------------------------------------------------------
+# sequence1                      seq_item  -     @730                            
+#   rstn                         integral  1     'h1                             
+#   re                           integral  1     'h0                             
+#   we                           integral  1     'h1                             
+#   adress                       integral  3     'h3                             
+#   data_in                      integral  16    'h31a1                          
+#   data_out                     integral  16    'h0                             
+#   begin_time                   time      64    210                             
+#   end_time                     time      64    210                             
+#   depth                        int       32    'd2                             
+#   parent sequence (name)       string    4     seq1                            
+#   parent sequence (full name)  string    32    my_test.env.agent.sequencer.seq1
+#   sequencer                    string    27    my_test.env.agent.sequencer     
+# -------------------------------------------------------------------------------
+# UVM_INFO driver.sv(31) @ 230: my_test.env.agent.driver [driver] following item is drived to DUT
+# -------------------------------------------------------------------------------
+# Name                           Type      Size  Value                           
+# -------------------------------------------------------------------------------
+# sequence1                      seq_item  -     @730                            
+#   rstn                         integral  1     'h1                             
+#   re                           integral  1     'h0                             
+#   we                           integral  1     'h1                             
+#   adress                       integral  3     'h3                             
+#   data_in                      integral  16    'h31a1                          
+#   data_out                     integral  16    'h0                             
+#   begin_time                   time      64    210                             
+#   end_time                     time      64    210                             
+#   depth                        int       32    'd2                             
+#   parent sequence (name)       string    4     seq1                            
+#   parent sequence (full name)  string    32    my_test.env.agent.sequencer.seq1
+#   sequencer                    string    27    my_test.env.agent.sequencer     
+# -------------------------------------------------------------------------------
+# UVM_INFO monitor.sv(35) @ 230: my_test.env.agent.monitor [monitor] following item is sampled from DUT
+# UVM_INFO monitor.sv(36) @ 230: my_test.env.agent.monitor [monitor] the if data_out is 0000
+# ----------------------------------
+# Name        Type      Size  Value 
+# ----------------------------------
+# item        seq_item  -     @674  
+#   rstn      integral  1     'h1   
+#   re        integral  1     'h0   
+#   we        integral  1     'h1   
+#   adress    integral  3     'h3   
+#   data_in   integral  16    'h4551
+#   data_out  integral  16    'h0   
+# ----------------------------------
+# UVM_INFO scoreboard.sv(34) @ 230: my_test.env.scoreboard [scoreboard] following item is subscibed to scoreboard
+# ----------------------------------
+# Name        Type      Size  Value 
+# ----------------------------------
+# item        seq_item  -     @674  
+#   rstn      integral  1     'h1   
+#   re        integral  1     'h0   
+#   we        integral  1     'h1   
+#   adress    integral  3     'h3   
+#   data_in   integral  16    'h4551
+#   data_out  integral  16    'h0   
+# ----------------------------------
+# UVM_INFO scoreboard.sv(48) @ 230: my_test.env.scoreboard [scoreboard]  read operation is capetured.
+# UVM_INFO sequence1.sv(35) @ 230: my_test.env.agent.sequencer@@seq1 [seq1] read operation test..
+# -------------------------------------------------------------------------------
+# Name                           Type      Size  Value                           
+# -------------------------------------------------------------------------------
+# sequence1                      seq_item  -     @730                            
+#   rstn                         integral  1     'h1                             
+#   re                           integral  1     'h1                             
+#   we                           integral  1     'h0                             
+#   adress                       integral  3     'h3                             
+#   data_in                      integral  16    'h2183                          
+#   data_out                     integral  16    'h0                             
+#   begin_time                   time      64    230                             
+#   end_time                     time      64    230                             
+#   depth                        int       32    'd2                             
+#   parent sequence (name)       string    4     seq1                            
+#   parent sequence (full name)  string    32    my_test.env.agent.sequencer.seq1
+#   sequencer                    string    27    my_test.env.agent.sequencer     
+# -------------------------------------------------------------------------------
+# UVM_INFO driver.sv(31) @ 250: my_test.env.agent.driver [driver] following item is drived to DUT
+# -------------------------------------------------------------------------------
+# Name                           Type      Size  Value                           
+# -------------------------------------------------------------------------------
+# sequence1                      seq_item  -     @730                            
+#   rstn                         integral  1     'h1                             
+#   re                           integral  1     'h1                             
+#   we                           integral  1     'h0                             
+#   adress                       integral  3     'h3                             
+#   data_in                      integral  16    'h2183                          
+#   data_out                     integral  16    'h0                             
+#   begin_time                   time      64    230                             
+#   end_time                     time      64    230                             
+#   depth                        int       32    'd2                             
+#   parent sequence (name)       string    4     seq1                            
+#   parent sequence (full name)  string    32    my_test.env.agent.sequencer.seq1
+#   sequencer                    string    27    my_test.env.agent.sequencer     
+# -------------------------------------------------------------------------------
+# UVM_INFO monitor.sv(35) @ 250: my_test.env.agent.monitor [monitor] following item is sampled from DUT
+# UVM_INFO monitor.sv(36) @ 250: my_test.env.agent.monitor [monitor] the if data_out is 0000
+# ----------------------------------
+# Name        Type      Size  Value 
+# ----------------------------------
+# item        seq_item  -     @674  
+#   rstn      integral  1     'h1   
+#   re        integral  1     'h0   
+#   we        integral  1     'h1   
+#   adress    integral  3     'h3   
+#   data_in   integral  16    'h513c
+#   data_out  integral  16    'h0   
+# ----------------------------------
+# UVM_INFO scoreboard.sv(34) @ 250: my_test.env.scoreboard [scoreboard] following item is subscibed to scoreboard
+# ----------------------------------
+# Name        Type      Size  Value 
+# ----------------------------------
+# item        seq_item  -     @674  
+#   rstn      integral  1     'h1   
+#   re        integral  1     'h0   
+#   we        integral  1     'h1   
+#   adress    integral  3     'h3   
+#   data_in   integral  16    'h513c
+#   data_out  integral  16    'h0   
+# ----------------------------------
+# UVM_INFO scoreboard.sv(48) @ 250: my_test.env.scoreboard [scoreboard]  read operation is capetured.
+# UVM_INFO sequence1.sv(35) @ 250: my_test.env.agent.sequencer@@seq1 [seq1] read operation test..
+# -------------------------------------------------------------------------------
+# Name                           Type      Size  Value                           
+# -------------------------------------------------------------------------------
+# sequence1                      seq_item  -     @730                            
+#   rstn                         integral  1     'h1                             
+#   re                           integral  1     'h1                             
+#   we                           integral  1     'h0                             
+#   adress                       integral  3     'h7                             
+#   data_in                      integral  16    'h14e8                          
+#   data_out                     integral  16    'h0                             
+#   begin_time                   time      64    250                             
+#   end_time                     time      64    250                             
+#   depth                        int       32    'd2                             
+#   parent sequence (name)       string    4     seq1                            
+#   parent sequence (full name)  string    32    my_test.env.agent.sequencer.seq1
+#   sequencer                    string    27    my_test.env.agent.sequencer     
+# -------------------------------------------------------------------------------
+# UVM_INFO driver.sv(31) @ 270: my_test.env.agent.driver [driver] following item is drived to DUT
+# -------------------------------------------------------------------------------
+# Name                           Type      Size  Value                           
+# -------------------------------------------------------------------------------
+# sequence1                      seq_item  -     @730                            
+#   rstn                         integral  1     'h1                             
+#   re                           integral  1     'h1                             
+#   we                           integral  1     'h0                             
+#   adress                       integral  3     'h7                             
+#   data_in                      integral  16    'h14e8                          
+#   data_out                     integral  16    'h0                             
+#   begin_time                   time      64    250                             
+#   end_time                     time      64    250                             
+#   depth                        int       32    'd2                             
+#   parent sequence (name)       string    4     seq1                            
+#   parent sequence (full name)  string    32    my_test.env.agent.sequencer.seq1
+#   sequencer                    string    27    my_test.env.agent.sequencer     
+# -------------------------------------------------------------------------------
+# UVM_INFO monitor.sv(35) @ 270: my_test.env.agent.monitor [monitor] following item is sampled from DUT
+# UVM_INFO monitor.sv(36) @ 270: my_test.env.agent.monitor [monitor] the if data_out is 0000
+# ----------------------------------
+# Name        Type      Size  Value 
+# ----------------------------------
+# item        seq_item  -     @674  
+#   rstn      integral  1     'h1   
+#   re        integral  1     'h0   
+#   we        integral  1     'h1   
+#   adress    integral  3     'h3   
+#   data_in   integral  16    'h31a1
+#   data_out  integral  16    'h0   
+# ----------------------------------
+# UVM_INFO scoreboard.sv(34) @ 270: my_test.env.scoreboard [scoreboard] following item is subscibed to scoreboard
+# ----------------------------------
+# Name        Type      Size  Value 
+# ----------------------------------
+# item        seq_item  -     @674  
+#   rstn      integral  1     'h1   
+#   re        integral  1     'h0   
+#   we        integral  1     'h1   
+#   adress    integral  3     'h3   
+#   data_in   integral  16    'h31a1
+#   data_out  integral  16    'h0   
+# ----------------------------------
+# UVM_INFO scoreboard.sv(48) @ 270: my_test.env.scoreboard [scoreboard]  read operation is capetured.
+# UVM_INFO sequence1.sv(35) @ 270: my_test.env.agent.sequencer@@seq1 [seq1] read operation test..
+# -------------------------------------------------------------------------------
+# Name                           Type      Size  Value                           
+# -------------------------------------------------------------------------------
+# sequence1                      seq_item  -     @730                            
+#   rstn                         integral  1     'h1                             
+#   re                           integral  1     'h1                             
+#   we                           integral  1     'h0                             
+#   adress                       integral  3     'h0                             
+#   data_in                      integral  16    'h445b                          
+#   data_out                     integral  16    'h0                             
+#   begin_time                   time      64    270                             
+#   end_time                     time      64    270                             
+#   depth                        int       32    'd2                             
+#   parent sequence (name)       string    4     seq1                            
+#   parent sequence (full name)  string    32    my_test.env.agent.sequencer.seq1
+#   sequencer                    string    27    my_test.env.agent.sequencer     
+# -------------------------------------------------------------------------------
+# UVM_INFO driver.sv(31) @ 290: my_test.env.agent.driver [driver] following item is drived to DUT
+# -------------------------------------------------------------------------------
+# Name                           Type      Size  Value                           
+# -------------------------------------------------------------------------------
+# sequence1                      seq_item  -     @730                            
+#   rstn                         integral  1     'h1                             
+#   re                           integral  1     'h1                             
+#   we                           integral  1     'h0                             
+#   adress                       integral  3     'h0                             
+#   data_in                      integral  16    'h445b                          
+#   data_out                     integral  16    'h0                             
+#   begin_time                   time      64    270                             
+#   end_time                     time      64    270                             
+#   depth                        int       32    'd2                             
+#   parent sequence (name)       string    4     seq1                            
+#   parent sequence (full name)  string    32    my_test.env.agent.sequencer.seq1
+#   sequencer                    string    27    my_test.env.agent.sequencer     
+# -------------------------------------------------------------------------------
+# UVM_INFO monitor.sv(35) @ 290: my_test.env.agent.monitor [monitor] following item is sampled from DUT
+# UVM_INFO monitor.sv(36) @ 290: my_test.env.agent.monitor [monitor] the if data_out is 31a1
+# ----------------------------------
+# Name        Type      Size  Value 
+# ----------------------------------
+# item        seq_item  -     @674  
+#   rstn      integral  1     'h1   
+#   re        integral  1     'h1   
+#   we        integral  1     'h0   
+#   adress    integral  3     'h3   
+#   data_in   integral  16    'h2183
+#   data_out  integral  16    'h0   
+# ----------------------------------
+# UVM_INFO scoreboard.sv(34) @ 290: my_test.env.scoreboard [scoreboard] following item is subscibed to scoreboard
+# ----------------------------------
+# Name        Type      Size  Value 
+# ----------------------------------
+# item        seq_item  -     @674  
+#   rstn      integral  1     'h1   
+#   re        integral  1     'h1   
+#   we        integral  1     'h0   
+#   adress    integral  3     'h3   
+#   data_in   integral  16    'h2183
+#   data_out  integral  16    'h0   
+# ----------------------------------
+# UVM_INFO sequence1.sv(35) @ 290: my_test.env.agent.sequencer@@seq1 [seq1] read operation test..
+# -------------------------------------------------------------------------------
+# Name                           Type      Size  Value                           
+# -------------------------------------------------------------------------------
+# sequence1                      seq_item  -     @730                            
+#   rstn                         integral  1     'h1                             
+#   re                           integral  1     'h1                             
+#   we                           integral  1     'h0                             
+#   adress                       integral  3     'h4                             
+#   data_in                      integral  16    'he9e9                          
+#   data_out                     integral  16    'h0                             
+#   begin_time                   time      64    290                             
+#   end_time                     time      64    290                             
+#   depth                        int       32    'd2                             
+#   parent sequence (name)       string    4     seq1                            
+#   parent sequence (full name)  string    32    my_test.env.agent.sequencer.seq1
+#   sequencer                    string    27    my_test.env.agent.sequencer     
+# -------------------------------------------------------------------------------
+# UVM_INFO driver.sv(31) @ 310: my_test.env.agent.driver [driver] following item is drived to DUT
+# -------------------------------------------------------------------------------
+# Name                           Type      Size  Value                           
+# -------------------------------------------------------------------------------
+# sequence1                      seq_item  -     @730                            
+#   rstn                         integral  1     'h1                             
+#   re                           integral  1     'h1                             
+#   we                           integral  1     'h0                             
+#   adress                       integral  3     'h4                             
+#   data_in                      integral  16    'he9e9                          
+#   data_out                     integral  16    'h0                             
+#   begin_time                   time      64    290                             
+#   end_time                     time      64    290                             
+#   depth                        int       32    'd2                             
+#   parent sequence (name)       string    4     seq1                            
+#   parent sequence (full name)  string    32    my_test.env.agent.sequencer.seq1
+#   sequencer                    string    27    my_test.env.agent.sequencer     
+# -------------------------------------------------------------------------------
+# UVM_INFO monitor.sv(35) @ 310: my_test.env.agent.monitor [monitor] following item is sampled from DUT
+# UVM_INFO monitor.sv(36) @ 310: my_test.env.agent.monitor [monitor] the if data_out is 3134
+# ----------------------------------
+# Name        Type      Size  Value 
+# ----------------------------------
+# item        seq_item  -     @674  
+#   rstn      integral  1     'h1   
+#   re        integral  1     'h1   
+#   we        integral  1     'h0   
+#   adress    integral  3     'h7   
+#   data_in   integral  16    'h14e8
+#   data_out  integral  16    'h31a1
+# ----------------------------------
+# UVM_INFO scoreboard.sv(34) @ 310: my_test.env.scoreboard [scoreboard] following item is subscibed to scoreboard
+# ----------------------------------
+# Name        Type      Size  Value 
+# ----------------------------------
+# item        seq_item  -     @674  
+#   rstn      integral  1     'h1   
+#   re        integral  1     'h1   
+#   we        integral  1     'h0   
+#   adress    integral  3     'h7   
+#   data_in   integral  16    'h14e8
+#   data_out  integral  16    'h31a1
+# ----------------------------------
+# UVM_INFO scoreboard.sv(39) @ 310: my_test.env.scoreboard [scoreboard] case passed! expected: 31a1 found: 31a1
+# UVM_INFO sequence1.sv(35) @ 310: my_test.env.agent.sequencer@@seq1 [seq1] read operation test..
+# -------------------------------------------------------------------------------
+# Name                           Type      Size  Value                           
+# -------------------------------------------------------------------------------
+# sequence1                      seq_item  -     @730                            
+#   rstn                         integral  1     'h1                             
+#   re                           integral  1     'h1                             
+#   we                           integral  1     'h0                             
+#   adress                       integral  3     'h0                             
+#   data_in                      integral  16    'h9f96                          
+#   data_out                     integral  16    'h0                             
+#   begin_time                   time      64    310                             
+#   end_time                     time      64    310                             
+#   depth                        int       32    'd2                             
+#   parent sequence (name)       string    4     seq1                            
+#   parent sequence (full name)  string    32    my_test.env.agent.sequencer.seq1
+#   sequencer                    string    27    my_test.env.agent.sequencer     
+# -------------------------------------------------------------------------------
+# UVM_INFO driver.sv(31) @ 330: my_test.env.agent.driver [driver] following item is drived to DUT
+# -------------------------------------------------------------------------------
+# Name                           Type      Size  Value                           
+# -------------------------------------------------------------------------------
+# sequence1                      seq_item  -     @730                            
+#   rstn                         integral  1     'h1                             
+#   re                           integral  1     'h1                             
+#   we                           integral  1     'h0                             
+#   adress                       integral  3     'h0                             
+#   data_in                      integral  16    'h9f96                          
+#   data_out                     integral  16    'h0                             
+#   begin_time                   time      64    310                             
+#   end_time                     time      64    310                             
+#   depth                        int       32    'd2                             
+#   parent sequence (name)       string    4     seq1                            
+#   parent sequence (full name)  string    32    my_test.env.agent.sequencer.seq1
+#   sequencer                    string    27    my_test.env.agent.sequencer     
+# -------------------------------------------------------------------------------
+# UVM_INFO monitor.sv(35) @ 330: my_test.env.agent.monitor [monitor] following item is sampled from DUT
+# UVM_INFO monitor.sv(36) @ 330: my_test.env.agent.monitor [monitor] the if data_out is d07c
+# ----------------------------------
+# Name        Type      Size  Value 
+# ----------------------------------
+# item        seq_item  -     @674  
+#   rstn      integral  1     'h1   
+#   re        integral  1     'h1   
+#   we        integral  1     'h0   
+#   adress    integral  3     'h0   
+#   data_in   integral  16    'h445b
+#   data_out  integral  16    'h3134
+# ----------------------------------
+# UVM_INFO scoreboard.sv(34) @ 330: my_test.env.scoreboard [scoreboard] following item is subscibed to scoreboard
+# ----------------------------------
+# Name        Type      Size  Value 
+# ----------------------------------
+# item        seq_item  -     @674  
+#   rstn      integral  1     'h1   
+#   re        integral  1     'h1   
+#   we        integral  1     'h0   
+#   adress    integral  3     'h0   
+#   data_in   integral  16    'h445b
+#   data_out  integral  16    'h3134
+# ----------------------------------
+# UVM_INFO scoreboard.sv(39) @ 330: my_test.env.scoreboard [scoreboard] case passed! expected: 3134 found: 3134
+# UVM_INFO sequence1.sv(35) @ 330: my_test.env.agent.sequencer@@seq1 [seq1] read operation test..
+# -------------------------------------------------------------------------------
+# Name                           Type      Size  Value                           
+# -------------------------------------------------------------------------------
+# sequence1                      seq_item  -     @730                            
+#   rstn                         integral  1     'h1                             
+#   re                           integral  1     'h1                             
+#   we                           integral  1     'h0                             
+#   adress                       integral  3     'h1                             
+#   data_in                      integral  16    'h11af                          
+#   data_out                     integral  16    'h0                             
+#   begin_time                   time      64    330                             
+#   end_time                     time      64    330                             
+#   depth                        int       32    'd2                             
+#   parent sequence (name)       string    4     seq1                            
+#   parent sequence (full name)  string    32    my_test.env.agent.sequencer.seq1
+#   sequencer                    string    27    my_test.env.agent.sequencer     
+# -------------------------------------------------------------------------------
+# UVM_INFO driver.sv(31) @ 350: my_test.env.agent.driver [driver] following item is drived to DUT
+# -------------------------------------------------------------------------------
+# Name                           Type      Size  Value                           
+# -------------------------------------------------------------------------------
+# sequence1                      seq_item  -     @730                            
+#   rstn                         integral  1     'h1                             
+#   re                           integral  1     'h1                             
+#   we                           integral  1     'h0                             
+#   adress                       integral  3     'h1                             
+#   data_in                      integral  16    'h11af                          
+#   data_out                     integral  16    'h0                             
+#   begin_time                   time      64    330                             
+#   end_time                     time      64    330                             
+#   depth                        int       32    'd2                             
+#   parent sequence (name)       string    4     seq1                            
+#   parent sequence (full name)  string    32    my_test.env.agent.sequencer.seq1
+#   sequencer                    string    27    my_test.env.agent.sequencer     
+# -------------------------------------------------------------------------------
+# UVM_INFO monitor.sv(35) @ 350: my_test.env.agent.monitor [monitor] following item is sampled from DUT
+# UVM_INFO monitor.sv(36) @ 350: my_test.env.agent.monitor [monitor] the if data_out is 6d9e
+# ----------------------------------
+# Name        Type      Size  Value 
+# ----------------------------------
+# item        seq_item  -     @674  
+#   rstn      integral  1     'h1   
+#   re        integral  1     'h1   
+#   we        integral  1     'h0   
+#   adress    integral  3     'h4   
+#   data_in   integral  16    'he9e9
+#   data_out  integral  16    'hd07c
+# ----------------------------------
+# UVM_INFO scoreboard.sv(34) @ 350: my_test.env.scoreboard [scoreboard] following item is subscibed to scoreboard
+# ----------------------------------
+# Name        Type      Size  Value 
+# ----------------------------------
+# item        seq_item  -     @674  
+#   rstn      integral  1     'h1   
+#   re        integral  1     'h1   
+#   we        integral  1     'h0   
+#   adress    integral  3     'h4   
+#   data_in   integral  16    'he9e9
+#   data_out  integral  16    'hd07c
+# ----------------------------------
+# UVM_INFO sequence1.sv(35) @ 350: my_test.env.agent.sequencer@@seq1 [seq1] read operation test..
+# -------------------------------------------------------------------------------
+# Name                           Type      Size  Value                           
+# -------------------------------------------------------------------------------
+# sequence1                      seq_item  -     @730                            
+#   rstn                         integral  1     'h1                             
+#   re                           integral  1     'h1                             
+#   we                           integral  1     'h0                             
+#   adress                       integral  3     'h5                             
+#   data_in                      integral  16    'h3e24                          
+#   data_out                     integral  16    'h0                             
+#   begin_time                   time      64    350                             
+#   end_time                     time      64    350                             
+#   depth                        int       32    'd2                             
+#   parent sequence (name)       string    4     seq1                            
+#   parent sequence (full name)  string    32    my_test.env.agent.sequencer.seq1
+#   sequencer                    string    27    my_test.env.agent.sequencer     
+# -------------------------------------------------------------------------------
+# UVM_INFO driver.sv(31) @ 370: my_test.env.agent.driver [driver] following item is drived to DUT
+# -------------------------------------------------------------------------------
+# Name                           Type      Size  Value                           
+# -------------------------------------------------------------------------------
+# sequence1                      seq_item  -     @730                            
+#   rstn                         integral  1     'h1                             
+#   re                           integral  1     'h1                             
+#   we                           integral  1     'h0                             
+#   adress                       integral  3     'h5                             
+#   data_in                      integral  16    'h3e24                          
+#   data_out                     integral  16    'h0                             
+#   begin_time                   time      64    350                             
+#   end_time                     time      64    350                             
+#   depth                        int       32    'd2                             
+#   parent sequence (name)       string    4     seq1                            
+#   parent sequence (full name)  string    32    my_test.env.agent.sequencer.seq1
+#   sequencer                    string    27    my_test.env.agent.sequencer     
+# -------------------------------------------------------------------------------
+# UVM_INFO monitor.sv(35) @ 370: my_test.env.agent.monitor [monitor] following item is sampled from DUT
+# UVM_INFO monitor.sv(36) @ 370: my_test.env.agent.monitor [monitor] the if data_out is d07c
+# ----------------------------------
+# Name        Type      Size  Value 
+# ----------------------------------
+# item        seq_item  -     @674  
+#   rstn      integral  1     'h1   
+#   re        integral  1     'h1   
+#   we        integral  1     'h0   
+#   adress    integral  3     'h0   
+#   data_in   integral  16    'h9f96
+#   data_out  integral  16    'h6d9e
+# ----------------------------------
+# UVM_INFO scoreboard.sv(34) @ 370: my_test.env.scoreboard [scoreboard] following item is subscibed to scoreboard
+# ----------------------------------
+# Name        Type      Size  Value 
+# ----------------------------------
+# item        seq_item  -     @674  
+#   rstn      integral  1     'h1   
+#   re        integral  1     'h1   
+#   we        integral  1     'h0   
+#   adress    integral  3     'h0   
+#   data_in   integral  16    'h9f96
+#   data_out  integral  16    'h6d9e
+# ----------------------------------
+# UVM_INFO scoreboard.sv(39) @ 370: my_test.env.scoreboard [scoreboard] case passed! expected: 6d9e found: 6d9e
+# UVM_INFO sequence1.sv(35) @ 370: my_test.env.agent.sequencer@@seq1 [seq1] read operation test..
+# -------------------------------------------------------------------------------
+# Name                           Type      Size  Value                           
+# -------------------------------------------------------------------------------
+# sequence1                      seq_item  -     @730                            
+#   rstn                         integral  1     'h1                             
+#   re                           integral  1     'h1                             
+#   we                           integral  1     'h0                             
+#   adress                       integral  3     'h2                             
+#   data_in                      integral  16    'h1707                          
+#   data_out                     integral  16    'h0                             
+#   begin_time                   time      64    370                             
+#   end_time                     time      64    370                             
+#   depth                        int       32    'd2                             
+#   parent sequence (name)       string    4     seq1                            
+#   parent sequence (full name)  string    32    my_test.env.agent.sequencer.seq1
+#   sequencer                    string    27    my_test.env.agent.sequencer     
+# -------------------------------------------------------------------------------
+# UVM_INFO driver.sv(31) @ 390: my_test.env.agent.driver [driver] following item is drived to DUT
+# -------------------------------------------------------------------------------
+# Name                           Type      Size  Value                           
+# -------------------------------------------------------------------------------
+# sequence1                      seq_item  -     @730                            
+#   rstn                         integral  1     'h1                             
+#   re                           integral  1     'h1                             
+#   we                           integral  1     'h0                             
+#   adress                       integral  3     'h2                             
+#   data_in                      integral  16    'h1707                          
+#   data_out                     integral  16    'h0                             
+#   begin_time                   time      64    370                             
+#   end_time                     time      64    370                             
+#   depth                        int       32    'd2                             
+#   parent sequence (name)       string    4     seq1                            
+#   parent sequence (full name)  string    32    my_test.env.agent.sequencer.seq1
+#   sequencer                    string    27    my_test.env.agent.sequencer     
+# -------------------------------------------------------------------------------
+# UVM_INFO monitor.sv(35) @ 390: my_test.env.agent.monitor [monitor] following item is sampled from DUT
+# UVM_INFO monitor.sv(36) @ 390: my_test.env.agent.monitor [monitor] the if data_out is c96d
+# ----------------------------------
+# Name        Type      Size  Value 
+# ----------------------------------
+# item        seq_item  -     @674  
+#   rstn      integral  1     'h1   
+#   re        integral  1     'h1   
+#   we        integral  1     'h0   
+#   adress    integral  3     'h1   
+#   data_in   integral  16    'h11af
+#   data_out  integral  16    'hd07c
+# ----------------------------------
+# UVM_INFO scoreboard.sv(34) @ 390: my_test.env.scoreboard [scoreboard] following item is subscibed to scoreboard
+# ----------------------------------
+# Name        Type      Size  Value 
+# ----------------------------------
+# item        seq_item  -     @674  
+#   rstn      integral  1     'h1   
+#   re        integral  1     'h1   
+#   we        integral  1     'h0   
+#   adress    integral  3     'h1   
+#   data_in   integral  16    'h11af
+#   data_out  integral  16    'hd07c
+# ----------------------------------
+# UVM_INFO sequence1.sv(35) @ 390: my_test.env.agent.sequencer@@seq1 [seq1] read operation test..
+# -------------------------------------------------------------------------------
+# Name                           Type      Size  Value                           
+# -------------------------------------------------------------------------------
+# sequence1                      seq_item  -     @730                            
+#   rstn                         integral  1     'h1                             
+#   re                           integral  1     'h1                             
+#   we                           integral  1     'h0                             
+#   adress                       integral  3     'h5                             
+#   data_in                      integral  16    'he31b                          
+#   data_out                     integral  16    'h0                             
+#   begin_time                   time      64    390                             
+#   end_time                     time      64    390                             
+#   depth                        int       32    'd2                             
+#   parent sequence (name)       string    4     seq1                            
+#   parent sequence (full name)  string    32    my_test.env.agent.sequencer.seq1
+#   sequencer                    string    27    my_test.env.agent.sequencer     
+# -------------------------------------------------------------------------------
+# UVM_INFO driver.sv(31) @ 410: my_test.env.agent.driver [driver] following item is drived to DUT
+# -------------------------------------------------------------------------------
+# Name                           Type      Size  Value                           
+# -------------------------------------------------------------------------------
+# sequence1                      seq_item  -     @730                            
+#   rstn                         integral  1     'h1                             
+#   re                           integral  1     'h1                             
+#   we                           integral  1     'h0                             
+#   adress                       integral  3     'h5                             
+#   data_in                      integral  16    'he31b                          
+#   data_out                     integral  16    'h0                             
+#   begin_time                   time      64    390                             
+#   end_time                     time      64    390                             
+#   depth                        int       32    'd2                             
+#   parent sequence (name)       string    4     seq1                            
+#   parent sequence (full name)  string    32    my_test.env.agent.sequencer.seq1
+#   sequencer                    string    27    my_test.env.agent.sequencer     
+# -------------------------------------------------------------------------------
+# UVM_INFO monitor.sv(35) @ 410: my_test.env.agent.monitor [monitor] following item is sampled from DUT
+# UVM_INFO monitor.sv(36) @ 410: my_test.env.agent.monitor [monitor] the if data_out is 0001
+# ----------------------------------
+# Name        Type      Size  Value 
+# ----------------------------------
+# item        seq_item  -     @674  
+#   rstn      integral  1     'h1   
+#   re        integral  1     'h1   
+#   we        integral  1     'h0   
+#   adress    integral  3     'h5   
+#   data_in   integral  16    'h3e24
+#   data_out  integral  16    'hc96d
+# ----------------------------------
+# UVM_INFO scoreboard.sv(34) @ 410: my_test.env.scoreboard [scoreboard] following item is subscibed to scoreboard
+# ----------------------------------
+# Name        Type      Size  Value 
+# ----------------------------------
+# item        seq_item  -     @674  
+#   rstn      integral  1     'h1   
+#   re        integral  1     'h1   
+#   we        integral  1     'h0   
+#   adress    integral  3     'h5   
+#   data_in   integral  16    'h3e24
+#   data_out  integral  16    'hc96d
+# ----------------------------------
+# UVM_INFO scoreboard.sv(39) @ 410: my_test.env.scoreboard [scoreboard] case passed! expected: c96d found: c96d
+# UVM_INFO sequence1.sv(35) @ 410: my_test.env.agent.sequencer@@seq1 [seq1] read operation test..
+# -------------------------------------------------------------------------------
+# Name                           Type      Size  Value                           
+# -------------------------------------------------------------------------------
+# sequence1                      seq_item  -     @730                            
+#   rstn                         integral  1     'h1                             
+#   re                           integral  1     'h1                             
+#   we                           integral  1     'h0                             
+#   adress                       integral  3     'h3                             
+#   data_in                      integral  16    'hee3e                          
+#   data_out                     integral  16    'h0                             
+#   begin_time                   time      64    410                             
+#   end_time                     time      64    410                             
+#   depth                        int       32    'd2                             
+#   parent sequence (name)       string    4     seq1                            
+#   parent sequence (full name)  string    32    my_test.env.agent.sequencer.seq1
+#   sequencer                    string    27    my_test.env.agent.sequencer     
+# -------------------------------------------------------------------------------
+# UVM_INFO driver.sv(31) @ 430: my_test.env.agent.driver [driver] following item is drived to DUT
+# -------------------------------------------------------------------------------
+# Name                           Type      Size  Value                           
+# -------------------------------------------------------------------------------
+# sequence1                      seq_item  -     @730                            
+#   rstn                         integral  1     'h1                             
+#   re                           integral  1     'h1                             
+#   we                           integral  1     'h0                             
+#   adress                       integral  3     'h3                             
+#   data_in                      integral  16    'hee3e                          
+#   data_out                     integral  16    'h0                             
+#   begin_time                   time      64    410                             
+#   end_time                     time      64    410                             
+#   depth                        int       32    'd2                             
+#   parent sequence (name)       string    4     seq1                            
+#   parent sequence (full name)  string    32    my_test.env.agent.sequencer.seq1
+#   sequencer                    string    27    my_test.env.agent.sequencer     
+# -------------------------------------------------------------------------------
+# UVM_INFO monitor.sv(35) @ 430: my_test.env.agent.monitor [monitor] following item is sampled from DUT
+# UVM_INFO monitor.sv(36) @ 430: my_test.env.agent.monitor [monitor] the if data_out is 0a0e
+# ----------------------------------
+# Name        Type      Size  Value 
+# ----------------------------------
+# item        seq_item  -     @674  
+#   rstn      integral  1     'h1   
+#   re        integral  1     'h1   
+#   we        integral  1     'h0   
+#   adress    integral  3     'h2   
+#   data_in   integral  16    'h1707
+#   data_out  integral  16    'h1   
+# ----------------------------------
+# UVM_INFO scoreboard.sv(34) @ 430: my_test.env.scoreboard [scoreboard] following item is subscibed to scoreboard
+# ----------------------------------
+# Name        Type      Size  Value 
+# ----------------------------------
+# item        seq_item  -     @674  
+#   rstn      integral  1     'h1   
+#   re        integral  1     'h1   
+#   we        integral  1     'h0   
+#   adress    integral  3     'h2   
+#   data_in   integral  16    'h1707
+#   data_out  integral  16    'h1   
+# ----------------------------------
+# UVM_INFO scoreboard.sv(39) @ 430: my_test.env.scoreboard [scoreboard] case passed! expected: 0001 found: 0001
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 430: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO coverage.sv(40) @ 430: my_test.env.coverage [coverage] Coverage is 100.000000
+# UVM_INFO mem_test.sv(46) @ 430: my_test [my_test] ---------------------
+# UVM_INFO mem_test.sv(47) @ 430: my_test [my_test] THE ENTIRE TEST PASS!
+# UVM_INFO mem_test.sv(48) @ 430: my_test [my_test] ---------------------
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :  133
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [Questa UVM]     2
+# [RNTST]     1
+# [TEST_DONE]     1
+# [coverage]     1
+# [driver]    20
+# [monitor]    44
+# [my_test]     7
+# [scoreboard]    37
+# [seq1]    20
+# ** Note: $finish    : D:/Programs/QuestaSim/questasim64_10.7c/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 430 ns  Iteration: 61  Instance: /tb_top
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at D:/Programs/QuestaSim/questasim64_10.7c/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh line 430
+# End time: 22:32:55 on Sep 04,2024, Elapsed time: 0:00:20
+# Errors: 0, Warnings: 0
